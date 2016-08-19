@@ -77,4 +77,8 @@ Pintereisting::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # note to set this to domain name.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
 end
